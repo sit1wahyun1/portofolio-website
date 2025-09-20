@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio — Siti Wahyuni</title>
+    <meta
+      name="description"
+      content="Portofolio Siti Wahyuni — Fresh Graduate Informatika Universitas AMIKOM Yogyakarta. Web Programming, UI/UX Design, Analisis Data."
+    />
+    <meta property="og:title" content="Portofolio — Siti Wahyuni" />
+    <meta
+      property="og:description"
+      content="Web Programming • UI/UX • Analisis Data"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="img/favicon.svg" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a href="#main" class="skip">Loncat ke konten utama</a>
+
+    <!-- ========== HEADER ========== -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="brand">
+            <div class="logo" aria-hidden="true"><span>SW</span></div>
+            <span>Siti Wahyuni</span>
+          </div>
+
+          <button
+            id="navToggle"
+            class="hamburger"
+            aria-expanded="false"
+            aria-controls="navMenu"
+            aria-label="Buka menu navigasi"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path
+                d="M3 6h18M3 12h18M3 18h18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+
+          <ul id="navMenu" class="nav-links" data-open="false">
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#portfolio">Proyek</a></li>
+            <li><a href="#pendidikan">Pendidikan</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+
+          <div class="nav-actions">
+            <button id="themeBtn" class="btn" title="Ganti tema">
+              <svg
+                class="icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 3v2m0 14v2m9-9h-2M5 12H3m13.657-6.657-1.414 1.414M7.757 16.243l-1.414 1.414m12.728 0-1.414-1.414M7.757 7.757 6.343 6.343"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="sr-only">Toggle tema</span>
+            </button>
+            <a href="#kontak" class="btn primary">Hubungi</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ========== HERO ========== -->
+      <section class="section hero">
+        <div class="container hero-grid">
+          <div>
+            <h1>Halo, saya <strong>Siti Wahyuni</strong> 👋</h1>
+            <p class="lead">
+              Fresh Graduate S1 Informatika —
+              <strong>Universitas AMIKOM Yogyakarta</strong>. Saya menyukai
+              pembuatan produk digital yang
+              <em>cepat, rapi, dan mudah digunakan</em>: fokus pada
+              <strong>Pemrograman Web</strong>, <strong>UI/UX Design</strong>,
+              dan <strong>Analisis Data</strong>.
+            </p>
+            <div class="cta">
+              <a href="#portfolio" class="btn primary">Lihat Proyek</a>
+              <button class="btn" id="printBtn" title="Unduh sebagai PDF">
+                Unduh CV
+              </button>
+              <a
+                class="btn"
+                href="mailto:siti.wahyuni@email.com?subject=Halo%20Siti%20Wahyuni"
+                title="Kirim email"
+              >
+                <!-- TODO: ganti email -->
+                <svg
+                  class="icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 6h16v12H4z"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="m4 7 8 6 8-6"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                </svg>
+                Email
+              </a>
+            </div>
+          </div>
+
+          <div class="avatar reveal" aria-hidden="true">
+            <div class="avatar-badge">SW</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== TENTANG ========== -->
+      <section id="tentang" class="section">
+        <div class="container grid-two">
+          <div class="reveal">
+            <h2>Tentang Saya</h2>
+            <p>
+              Saya seorang pengembang pemula yang terbiasa membangun antarmuka
+              web yang bersih, membuat alur UX yang ringkas, dan mengolah data
+              menjadi insight yang mudah dipahami. Terbuka untuk peluang
+              <strong>front‑end developer</strong>,
+              <strong>UI/UX designer</strong>, atau
+              <strong>data analyst</strong>.
+            </p>
+            <div class="pills" aria-label="Minat utama">
+              <span class="pill">Front‑End</span>
+              <span class="pill">Design System</span>
+              <span class="pill">Dashboard & Insight</span>
+            </div>
+          </div>
+
+          <div class="cards">
+            <div class="card reveal">
+              <h3>Info Singkat</h3>
+              <ul class="muted" style="margin: 0; padding-left: 18px">
+                <li>
+                  Fresh Graduate Informatika — Universitas AMIKOM Yogyakarta
+                </li>
+                <li>
+                  Domisili: Yogyakarta
+                  <!-- TODO: opsional -->
+                </li>
+                <li>
+                  Bahasa: Indonesia, Inggris (aktif)
+                  <!-- TODO: sesuaikan -->
+                </li>
+              </ul>
+            </div>
+            <div class="card reveal">
+              <h3>Kontak</h3>
+              <div class="pills">
+                <a class="pill" href="mailto:siti.wahyuni@email.com">Email</a>
+                <!-- TODO: ganti link LinkedIn & GitHub -->
+                <a
+                  class="pill"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+                <a
+                  class="pill"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+                <button class="pill" id="copyMail" type="button">
+                  Salin Email
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== KEAHLIAN ========== -->
+      <section id="keahlian" class="section">
+        <div class="container">
+          <h2>Keahlian</h2>
+          <p class="subtitle">
+            Tiga fokus utama: Pemrograman Web, UI/UX Design, dan Analisis Data.
+          </p>
+
+          <div class="cards">
+            <div class="card reveal">
+              <h3>Web Programming</h3>
+              <p class="muted">
+                Membangun website responsif, cepat, dan aksesibel.
+              </p>
+              <div class="pills">
+                <span class="pill">HTML</span><span class="pill">CSS</span
+                ><span class="pill">JavaScript</span>
+                <span class="pill">React</span><span class="pill">Node.js</span
+                ><span class="pill">REST API</span>
+              </div>
+              <div class="skill" style="margin-top: 10px">
+                <span>Front‑End</span
+                ><meter min="0" max="100" value="80">80%</meter>
+              </div>
+              <div class="skill">
+                <span>Back‑End</span
+                ><meter min="0" max="100" value="60">60%</meter>
+              </div>
+            </div>
+
+            <div class="card reveal">
+              <h3>UI/UX Design</h3>
+              <p class="muted">
+                Riset singkat, wireframe, prototipe interaktif, dan design
+                system.
+              </p>
+              <div class="pills">
+                <span class="pill">Figma</span
+                ><span class="pill">Wireframing</span
+                ><span class="pill">Prototyping</span>
+                <span class="pill">Aksesibilitas</span
+                ><span class="pill">Usability</span>
+              </div>
+              <div class="skill" style="margin-top: 10px">
+                <span>Prototyping</span
+                ><meter min="0" max="100" value="75">75%</meter>
+              </div>
+            </div>
+
+            <div class="card reveal">
+              <h3>Analisis Data</h3>
+              <p class="muted">
+                Mengolah, memvisualisasi, dan menyajikan insight.
+              </p>
+              <div class="pills">
+                <span class="pill">Python</span><span class="pill">Pandas</span
+                ><span class="pill">SQL</span> <span class="pill">Power BI</span
+                ><span class="pill">Excel</span>
+              </div>
+              <div class="skill" style="margin-top: 10px">
+                <span>ETL & Cleaning</span
+                ><meter min="0" max="100" value="70">70%</meter>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PORTFOLIO / PROYEK ========== -->
+      <section id="portfolio" class="section">
+        <div class="container">
+          <h2>Proyek Pilihan</h2>
+          <p class="subtitle">
+            Contoh ringkas lintas web, desain, dan data.
+            <!-- TODO: ganti dengan proyek asli -->
+          </p>
+
+          <div class="project-grid">
+            <!-- Proyek 1 -->
+            <article class="project reveal">
+              <div class="thumb">SIAK Mini</div>
+              <div class="body">
+                <h3>Sistem Informasi Akademik Mini</h3>
+                <p class="muted">
+                  Aplikasi web CRUD untuk manajemen mahasiswa & mata kuliah,
+                  role admin/dosen/mahasiswa.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span><span class="tag">Node.js</span
+                  ><span class="tag">PostgreSQL</span>
+                </div>
+                <div class="pills" style="margin-top: 10px">
+                  <a class="pill" href="#" target="_blank" rel="noopener"
+                    >Lihat Demo</a
+                  >
+                  <a class="pill" href="#" target="_blank" rel="noopener"
+                    >Kode Sumber</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Proyek 2 -->
+            <article class="project reveal">
+              <div class="thumb">Landing UMKM</div>
+              <div class="body">
+                <h3>Landing Page UMKM Kopi</h3>
+                <p class="muted">
+                  Desain & implementasi landing page dengan fokus copy singkat,
+                  typografi, dan performa.
+                </p>
+                <div class="tags">
+                  <span class="tag">HTML</span><span class="tag">CSS</span
+                  ><span class="tag">Vanilla JS</span>
+                </div>
+                <div class="pills" style="margin-top: 10px">
+                  <a class="pill" href="#" target="_blank" rel="noopener"
+                    >Tinjau Halaman</a
+                  >
+                  <a class="pill" href="#" target="_blank" rel="noopener"
+                    >Figma</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <!-- Proyek 3 -->
+            <article class="project reveal">
+              <div class="thumb">Dashboard Sales</div>
+              <div class="body">
+                <h3>Dashboard Analisis Penjualan</h3>
+                <p class="muted">
+                  Pipeline cleaning → agregasi → visualisasi KPI bulanan untuk
+                  tim non-teknis.
+                </p>
+                <div class="tags">
+                  <span class="tag">Python</span><span class="tag">Pandas</span
+                  ><span class="tag">Power BI</span>
+                </div>
+                <div class="pills" style="margin-top: 10px">
+                  <a class="pill" href="#" target="_blank" rel="noopener"
+                    >Preview BI</a
+                  >
+                  <a class="pill" href="#" target="_blank" rel="noopener"
+                    >Notebook</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PENDIDIKAN ========== -->
+      <section id="pendidikan" class="section">
+        <div class="container">
+          <h2>Pendidikan</h2>
+          <div class="timeline reveal">
+            <div class="t-item">
+              <h3>S1 Informatika — Universitas AMIKOM Yogyakarta</h3>
+              <p class="muted" style="margin: 0.2rem 0">
+                Status: Fresh Graduate
+                <!-- TODO: isi tahun studi jika perlu, mis. 2021–2025 -->
+              </p>
+              <p class="muted" style="margin: 0.2rem 0">
+                Fokus: Web Development, UI/UX, Analisis Data
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== KONTAK ========== -->
+      <section id="kontak" class="section">
+        <div class="container">
+          <h2>Kontak</h2>
+          <p class="subtitle">
+            Ingin berdiskusi atau berkolaborasi? Kirim pesan singkat di bawah
+            ini.
+          </p>
+          <div class="grid-two">
+            <form id="contactForm" class="reveal" aria-label="Formulir kontak">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nama"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Pesan"
+                required
+              ></textarea>
+              <button class="btn primary" type="submit">Kirim</button>
+              <p class="note">
+                Formulir ini akan membuka email klien Anda (mailto).
+                <!-- TODO: bisa diarahkan ke layanan formulir pilihan Anda -->
+              </p>
+            </form>
+
+            <div class="card reveal">
+              <h3>Terhubung</h3>
+              <p class="muted">
+                Saya terbuka untuk freelance maupun full‑time.
+              </p>
+              <div class="pills">
+                <a class="pill" href="mailto:siti.wahyuni@email.com"
+                  >siti.wahyuni@email.com</a
+                >
+                <!-- TODO: ganti link -->
+                <a
+                  class="pill"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >LinkedIn</a
+                >
+                <a
+                  class="pill"
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <div
+        class="container"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          flex-wrap: wrap;
+        "
+      >
+        <p>
+          © <span id="year"></span> Siti Wahyuni. Dibuat dengan HTML, CSS, &amp;
+          JS.
+        </p>
+        <div class="social">
+          <a
+            href="https://github.com/"
+            target="_blank"
+            rel="noopener"
+            title="GitHub"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.02c-3.34.73-4.04-1.61-4.04-1.61-.55-1.4-1.35-1.77-1.35-1.77-1.1-.75.08-.73.08-.73 1.22.09 1.86 1.25 1.86 1.25 1.08 1.85 2.83 1.32 3.52 1.01.11-.8.42-1.32.76-1.62-2.66-.3-5.47-1.34-5.47-5.97 0-1.32.47-2.4 1.24-3.25-.12-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.24a11.45 11.45 0 0 1 6 0c2.29-1.56 3.3-1.24 3.3-1.24.66 1.65.24 2.88.12 3.18.77.85 1.24 1.93 1.24 3.25 0 4.64-2.81 5.66-5.49 5.96.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5z"
+              />
+            </svg>
+            <span class="sr-only">GitHub</span>
+          </a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener"
+            title="LinkedIn"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.26 2.3-2.6 4.73-2.6C21.4 7.6 24 10 24 14.3V24h-5v-8.6c0-2.05-.04-4.69-2.85-4.69-2.85 0-3.28 2.22-3.28 4.53V24H8z"
+              />
+            </svg>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS per fitur -->
+    <script src="js/year.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/print.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/reveal.js"></script>
+  </body>
+</html>
